@@ -1,16 +1,8 @@
 import { useState } from 'react'
+import { Routes, Route, Link, useNavigate } from 'react-router-dom'
+import { SERVICES } from './services'
+import ServicePage from './ServicePage'
 import './App.css'
-
-const SERVICES = [
-  { icon: '🏠', title: 'Roof Replacement', desc: 'Full residential and commercial roof replacements using premium materials from top manufacturers.' },
-  { icon: '🔧', title: 'Roof Repair', desc: 'Fast, reliable repairs for leaks, storm damage, missing shingles, and more.' },
-  { icon: '🌧️', title: 'Gutter Services', desc: 'Installation, replacement, and cleaning of gutters to protect your home from water damage.' },
-  { icon: '🚨', title: 'Emergency Roofing', desc: '24/7 emergency response for sudden leaks and storm damage — we\'re here when you need us most.' },
-  { icon: '🔆', title: 'Skylight Services', desc: 'Skylight replacement, repair, and installation to brighten up your home.' },
-  { icon: '🏢', title: 'Commercial Roofing', desc: 'Durable flat and low-slope roofing solutions for businesses of all sizes.' },
-  { icon: '💡', title: 'Holiday Lights', desc: 'Professional holiday light installation and takedown — stress-free seasonal decorating.' },
-  { icon: '💳', title: 'Financing Available', desc: 'Buy now, pay later! Flexible financing options so you can get the roof you need today.' },
-]
 
 const WHY = [
   { title: 'In-House Crews Only', desc: 'We never subcontract. Our own trained crew does every job — so you know who\'s on your roof.' },
@@ -40,30 +32,12 @@ const TESTIMONIALS = [
 ]
 
 const FAQS = [
-  {
-    q: 'How do I know if my roof needs repair or replacement?',
-    a: 'If your roof is under 15–20 years old and the damage is localized, repair is usually best. For older roofs or widespread damage, a full replacement is often more cost-effective long-term. We offer free inspections to help you decide.',
-  },
-  {
-    q: 'What types of roofing materials do you use?',
-    a: 'We work with CertainTeed, Owens Corning, Malarkey, GAF, and IKO — all top-tier, USA-made brands. We\'ll recommend the best material for your home\'s style, budget, and climate needs.',
-  },
-  {
-    q: 'Do you offer emergency roofing services?',
-    a: 'Yes! We provide 24/7 emergency response for sudden leaks, storm damage, and fallen debris. Call us anytime at (971) 230-4929.',
-  },
-  {
-    q: 'How fast can repairs or replacements be completed?',
-    a: 'Most repairs are completed same-day or next-day. Full roof replacements typically take one to two days depending on the size of the home.',
-  },
-  {
-    q: 'Are your roofing crews in-house or subcontracted?',
-    a: '100% in-house. We never subcontract work. Our own trained, vetted crew handles every job from start to finish.',
-  },
-  {
-    q: 'Do you use roofing materials made in the USA?',
-    a: 'Yes — we specifically source materials from manufacturers who produce quality products domestically, so you can feel good about what goes on your home.',
-  },
+  { q: 'How do I know if my roof needs repair or replacement?', a: 'If your roof is under 15–20 years old and damage is localized, repair is usually best. For older roofs or widespread damage, a full replacement is often more cost-effective. We offer free inspections to help you decide.' },
+  { q: 'What types of roofing materials do you use?', a: 'We work with CertainTeed, Owens Corning, Malarkey, GAF, and IKO — all top-tier, USA-made brands.' },
+  { q: 'Do you offer emergency roofing services?', a: 'Yes! We provide 24/7 emergency response. Call us anytime at (971) 230-4929.' },
+  { q: 'How fast can repairs or replacements be completed?', a: 'Most repairs are completed same-day or next-day. Full roof replacements typically take one to two days.' },
+  { q: 'Are your roofing crews in-house or subcontracted?', a: '100% in-house. We never subcontract work.' },
+  { q: 'Do you use roofing materials made in the USA?', a: 'Yes — we specifically source materials from manufacturers who produce quality products domestically.' },
 ]
 
 const BRANDS = ['CertainTeed', 'Owens Corning', 'Malarkey', 'GAF', 'IKO']
@@ -81,7 +55,9 @@ function FAQ({ q, a }) {
   )
 }
 
-export default function App() {
+function HomePage() {
+  const navigate = useNavigate()
+
   return (
     <>
       {/* NAV */}
@@ -130,10 +106,16 @@ export default function App() {
         </div>
         <div className="services-grid">
           {SERVICES.map(s => (
-            <div className="service-card" key={s.title}>
+            <div
+              className="service-card"
+              key={s.id}
+              onClick={() => navigate(`/services/${s.id}`)}
+              style={{ cursor: 'pointer' }}
+            >
               <div className="service-icon">{s.icon}</div>
               <h3>{s.title}</h3>
-              <p>{s.desc}</p>
+              <p>{s.tagline}</p>
+              <span className="service-link">Learn more →</span>
             </div>
           ))}
         </div>
@@ -213,12 +195,9 @@ export default function App() {
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="#services">Roof Replacement</a></li>
-              <li><a href="#services">Roof Repair</a></li>
-              <li><a href="#services">Gutter Services</a></li>
-              <li><a href="#services">Emergency Roofing</a></li>
-              <li><a href="#services">Commercial Roofing</a></li>
-              <li><a href="#services">Skylight Services</a></li>
+              {SERVICES.map(s => (
+                <li key={s.id}><Link to={`/services/${s.id}`}>{s.title}</Link></li>
+              ))}
             </ul>
           </div>
           <div className="footer-col">
@@ -244,5 +223,14 @@ export default function App() {
         </div>
       </footer>
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/services/:id" element={<ServicePage />} />
+    </Routes>
   )
 }
