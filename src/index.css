@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #c0392b;
+  --red-dark: #a93226;
+  --dark: #1a1a1a;
+  --gray: #555;
+  --light-gray: #f7f7f7;
+  --white: #fff;
+  --border: #e0e0e0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+  background: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
