@@ -11,6 +11,7 @@ import ReviewsPage from './ReviewsPage'
 import FAQPage from './FAQPage'
 import FinancingPage from './FinancingPage'
 import Navbar from './Navbar'
+import FinancingPopup from './FinancingPopup'
 import './App.css'
 
 
@@ -187,16 +188,19 @@ function HomePage() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/services" element={<ServicesPage />} />
-      <Route path="/services/:id" element={<ServicePage />} />
-      <Route path="/areas" element={<AreasPage />} />
-      <Route path="/areas/:id" element={<CityPage />} />
-      <Route path="/why-us" element={<WhyUsPage />} />
-      <Route path="/reviews" element={<ReviewsPage />} />
-      <Route path="/faq" element={<FAQPage />} />
-      <Route path="/financing" element={<FinancingPage />} />
-    </Routes>
+    <>
+      <FinancingPopup />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/:id" element={<ServicePage />} />
+        <Route path="/areas" element={<AreasPage />} />
+        <Route path="/areas/:id" element={<CityPage />} />
+        <Route path="/why-us" element={<WhyUsPage />} />
+        <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/financing" element={<FinancingPage />} />
+      </Routes>
+    </>
   )
 }

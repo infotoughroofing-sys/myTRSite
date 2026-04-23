@@ -1,0 +1,128 @@
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn .3s ease;
+}
+
+.popup-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 40px 36px;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+  animation: slideUp .3s ease;
+  border-top: 5px solid var(--red);
+}
+
+.popup-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color .2s, background .2s;
+}
+
+.popup-close:hover {
+  color: var(--dark);
+  background: var(--light-gray);
+}
+
+.popup-icon {
+  font-size: 48px;
+  margin-bottom: 14px;
+}
+
+.popup-card h2 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.popup-card p {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.popup-perks {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  background: var(--light-gray);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+.popup-perks li {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.popup-cta {
+  display: block;
+  width: 100%;
+  background: var(--red);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+  margin-bottom: 14px;
+}
+
+.popup-cta:hover {
+  background: var(--red-dark);
+  transform: translateY(-1px);
+}
+
+.popup-call {
+  display: block;
+  font-size: 13px;
+  color: var(--gray);
+  transition: color .2s;
+}
+
+.popup-call:hover {
+  color: var(--red);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .popup-card {
+    padding: 32px 22px;
+  }
+}
