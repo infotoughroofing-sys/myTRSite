@@ -29,6 +29,35 @@ export const SERVICES = [
     ],
   },
   {
+    id: 'commercial-roofing',
+    icon: '🏢',
+    title: 'Commercial Roof Replacement',
+    photo: 'commercial-apartment-roof-1.jpg',
+    photoAlt: 'Completed apartment complex roof replacement by Tough Roofing in Portland',
+    photoCaption: 'A completed apartment complex roof replacement — architectural shingles, proper ventilation, and clean execution by our in-house crew.',
+    tagline: 'Durable flat and low-slope roofing solutions for businesses of all sizes.',
+    hero: 'Commercial roofs have unique demands — large surface areas, foot traffic, HVAC penetrations, and strict drainage requirements. We bring the same in-house quality and accountability to every commercial project.',
+    details: [
+      {
+        heading: 'Systems We Install',
+        body: 'TPO (Thermoplastic Polyolefin), EPDM rubber roofing, modified bitumen, built-up roofing (BUR), metal roofing for commercial applications.',
+      },
+      {
+        heading: 'Maintenance Programs',
+        body: 'We offer scheduled inspection and maintenance programs for commercial clients to catch problems early and extend roof life — saving significant money compared to reactive repairs.',
+      },
+      {
+        heading: 'Minimal Disruption',
+        body: 'We work around your business hours when possible and plan projects to minimize disruption to your operations, employees, and customers.',
+      },
+    ],
+    faqs: [
+      { q: 'Do you handle large commercial buildings?', a: 'Yes — we work on everything from small retail shops to large warehouse and office buildings across the Portland metro area.' },
+      { q: 'What is TPO roofing?', a: 'TPO is a single-ply membrane that\'s energy-efficient, highly reflective, and one of the most popular flat roofing systems available today.' },
+      { q: 'Can you work on a building that\'s still in operation?', a: 'Absolutely. We plan around your schedule and use phased approaches when needed to keep your business running.' },
+    ],
+  },
+  {
     id: 'roof-repair',
     icon: '🔧',
     title: 'Roof Repair',
@@ -133,35 +162,6 @@ export const SERVICES = [
       { q: 'Will a skylight cause my roof to leak?', a: 'Only if it\'s improperly installed. Our crew integrates skylights fully with your roofing system using proper step flashing and waterproofing.' },
       { q: 'What brands do you install?', a: 'We work with Velux, Fakro, and other quality skylight manufacturers. We\'ll recommend the best option for your roof pitch and room size.' },
       { q: 'How long does installation take?', a: 'A single skylight installation typically takes half a day to a full day depending on the complexity.' },
-    ],
-  },
-  {
-    id: 'commercial-roofing',
-    icon: '🏢',
-    title: 'Commercial Roof Replacement',
-    photo: 'commercial-apartment-roof-1.jpg',
-    photoAlt: 'Completed apartment complex roof replacement by Tough Roofing in Portland',
-    photoCaption: 'A completed apartment complex roof replacement — architectural shingles, proper ventilation, and clean execution by our in-house crew.',
-    tagline: 'Durable flat and low-slope roofing solutions for businesses of all sizes.',
-    hero: 'Commercial roofs have unique demands — large surface areas, foot traffic, HVAC penetrations, and strict drainage requirements. We bring the same in-house quality and accountability to every commercial project.',
-    details: [
-      {
-        heading: 'Systems We Install',
-        body: 'TPO (Thermoplastic Polyolefin), EPDM rubber roofing, modified bitumen, built-up roofing (BUR), metal roofing for commercial applications.',
-      },
-      {
-        heading: 'Maintenance Programs',
-        body: 'We offer scheduled inspection and maintenance programs for commercial clients to catch problems early and extend roof life — saving significant money compared to reactive repairs.',
-      },
-      {
-        heading: 'Minimal Disruption',
-        body: 'We work around your business hours when possible and plan projects to minimize disruption to your operations, employees, and customers.',
-      },
-    ],
-    faqs: [
-      { q: 'Do you handle large commercial buildings?', a: 'Yes — we work on everything from small retail shops to large warehouse and office buildings across the Portland metro area.' },
-      { q: 'What is TPO roofing?', a: 'TPO is a single-ply membrane that\'s energy-efficient, highly reflective, and one of the most popular flat roofing systems available today.' },
-      { q: 'Can you work on a building that\'s still in operation?', a: 'Absolutely. We plan around your schedule and use phased approaches when needed to keep your business running.' },
     ],
   },
   {
