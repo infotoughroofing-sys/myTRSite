@@ -137,4 +137,5 @@ export const BRANDS = [
   { name: 'Malarkey', url: 'https://www.malarkeyroofing.com/company-profile/?company=Tough+Roofing+LLC' },
   { name: 'GAF', url: 'https://www.gaf.com/en-us/roofing-contractors' },
   { name: 'IKO', url: 'https://www.iko.com/na/find-a-contractor/' },
+  { name: 'IB Roof Systems', url: 'https://ibroof.com/products' },
 ]
