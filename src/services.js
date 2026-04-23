@@ -3,6 +3,9 @@ export const SERVICES = [
     id: 'roof-replacement',
     icon: '🏠',
     title: 'Roof Replacement',
+    photo: 'commercial-apartment-roof.jpg',
+    photoAlt: 'Close-up aerial view of new architectural shingles installed by Tough Roofing',
+    photoCaption: 'Fresh architectural shingles installed by our in-house crew — clean lines, proper ventilation, and built to last.',
     tagline: 'Full residential and commercial roof replacements using premium materials from top manufacturers.',
     hero: 'A new roof is one of the most important investments you can make in your home. Our in-house crew handles everything — tear-off, disposal, underlayment, flashing, and installation — with zero subcontracting.',
     details: [
@@ -136,6 +139,9 @@ export const SERVICES = [
     id: 'commercial-roofing',
     icon: '🏢',
     title: 'Commercial Roofing',
+    photo: 'commercial-apartment-roof-1.jpg',
+    photoAlt: 'Completed apartment complex roof replacement by Tough Roofing in Portland',
+    photoCaption: 'A completed apartment complex roof replacement — architectural shingles, proper ventilation, and clean execution by our in-house crew.',
     tagline: 'Durable flat and low-slope roofing solutions for businesses of all sizes.',
     hero: 'Commercial roofs have unique demands — large surface areas, foot traffic, HVAC penetrations, and strict drainage requirements. We bring the same in-house quality and accountability to every commercial project.',
     details: [
