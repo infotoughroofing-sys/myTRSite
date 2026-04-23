@@ -76,10 +76,10 @@ export default function CityPage() {
       <section className="section section-alt">
         <div className="city-neighborhood">
           <div className="city-nbhd-badge">Neighborhood Spotlight</div>
-          <h2>{city.neighborhood}</h2>
+          <h2 style={city.neighborhood.length > 40 ? { fontSize: '24px' } : {}}>{city.neighborhood}</h2>
           <p>{city.neighborhoodDesc}</p>
           <a href="tel:9712304929" className="city-call-cta">
-            📞 Serving {city.neighborhood} — Call (971) 230-4929 for a Free Quote
+            📞 Serving {city.name} — Call (971) 230-4929 for a Free Quote
           </a>
         </div>
       </section>
