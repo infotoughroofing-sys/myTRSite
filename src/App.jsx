@@ -3,6 +3,7 @@ import { Routes, Route, Link, useNavigate } from 'react-router-dom'
 import { SERVICES } from './services'
 import ServicePage from './ServicePage'
 import AreasPage from './AreasPage'
+import CityPage from './CityPage'
 import './App.css'
 
 const WHY = [
@@ -234,6 +235,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/services/:id" element={<ServicePage />} />
       <Route path="/areas" element={<AreasPage />} />
+      <Route path="/areas/:id" element={<CityPage />} />
     </Routes>
   )
 }

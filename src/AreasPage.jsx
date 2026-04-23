@@ -1,40 +1,19 @@
 import { Link } from 'react-router-dom'
+import { CITIES } from './cities'
 import './AreasPage.css'
 
-const AREAS = [
-  {
-    region: 'Portland Metro',
-    cities: [
-      'Portland', 'Northeast Portland', 'Southeast Portland', 'North Portland',
-      'Southwest Portland', 'Northwest Portland', 'St. Johns', 'Sellwood',
-    ],
-  },
-  {
-    region: 'East Metro',
-    cities: [
-      'Gresham', 'Troutdale', 'Fairview', 'Wood Village', 'Corbett', 'Sandy',
-    ],
-  },
-  {
-    region: 'West Metro',
-    cities: [
-      'Beaverton', 'Hillsboro', 'Tigard', 'Tualatin', 'Sherwood',
-      'Lake Oswego', 'West Linn', 'Wilsonville',
-    ],
-  },
-  {
-    region: 'North & Clark County (WA)',
-    cities: [
-      'Vancouver', 'Camas', 'Washougal', 'Battle Ground', 'Ridgefield', 'La Center',
-    ],
-  },
-  {
-    region: 'South Metro',
-    cities: [
-      'Milwaukie', 'Oregon City', 'Gladstone', 'Canby', 'Clackamas', 'Happy Valley',
-    ],
-  },
+const AREA_ORDER = [
+  'Portland Metro',
+  'East Metro',
+  'West Metro',
+  'North & Clark County (WA)',
+  'South Metro',
 ]
+
+const AREAS = AREA_ORDER.map(region => ({
+  region,
+  cities: CITIES.filter(c => c.region === region),
+}))
 
 const HIGHLIGHTS = [
   { icon: '📍', label: '50+ Cities Served', desc: 'We cover the full Portland metro area in both Oregon and Washington.' },
@@ -91,8 +70,9 @@ export default function AreasPage() {
               <h3>{a.region}</h3>
               <ul>
                 {a.cities.map(c => (
-                  <li key={c}>
-                    <span className="areas-check">✓</span> {c}
+                  <li key={c.id}>
+                    <span className="areas-check">✓</span>
+                    <Link to={`/areas/${c.id}`} className="areas-city-link">{c.name}</Link>
                   </li>
                 ))}
               </ul>

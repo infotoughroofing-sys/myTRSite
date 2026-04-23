@@ -100,6 +100,16 @@
   margin-right: 6px;
 }
 
+.areas-city-link {
+  color: var(--dark);
+  transition: color .15s;
+}
+
+.areas-city-link:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
 .areas-unsure {
   max-width: 620px;
   margin: 0 auto;
