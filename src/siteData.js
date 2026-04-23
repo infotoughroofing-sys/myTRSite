@@ -132,7 +132,7 @@ export const FAQS = [
 ]
 
 export const BRANDS = [
-  { name: 'CertainTeed', url: 'https://www.certainteed.com/find-a-contractor/' },
+  { name: 'CertainTeed', url: 'https://www.certainteed.com/profiles/ToughRoofing' },
   { name: 'Owens Corning', url: 'https://www.owenscorning.com/en-us/roofing/find-a-contractor' },
   { name: 'Malarkey', url: 'https://www.malarkeyroofing.com/find-a-contractor/' },
   { name: 'GAF', url: 'https://www.gaf.com/en-us/roofing-contractors' },
