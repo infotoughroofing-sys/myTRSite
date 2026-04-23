@@ -1,50 +1,18 @@
 import { useState } from 'react'
 import { Routes, Route, Link, useNavigate } from 'react-router-dom'
 import { SERVICES } from './services'
+import { WHY, TESTIMONIALS, FAQS, BRANDS } from './siteData'
 import ServicePage from './ServicePage'
 import ServicesPage from './ServicesPage'
 import AreasPage from './AreasPage'
 import CityPage from './CityPage'
+import WhyUsPage from './WhyUsPage'
+import ReviewsPage from './ReviewsPage'
+import FAQPage from './FAQPage'
+import FinancingPage from './FinancingPage'
 import Navbar from './Navbar'
 import './App.css'
 
-const WHY = [
-  { title: 'In-House Crews Only', desc: 'We never subcontract. Our own trained crew does every job — so you know who\'s on your roof.' },
-  { title: 'Rated 4.9 / 5 Stars', desc: '19 Google reviews from real Portland homeowners who trust us with their biggest investment.' },
-  { title: 'Licensed & Insured', desc: 'CCB #205496 (OR) | TOUGHRL772B4 (WA). Fully licensed in Oregon and Washington.' },
-  { title: 'Top-Tier Materials', desc: 'CertainTeed, Owens Corning, Malarkey, GAF, IKO — only proven, USA-made products.' },
-  { title: 'Digital Tracking', desc: 'Approve work and track job progress online through our Jobber platform.' },
-  { title: 'Family-Run Business', desc: 'Local, family-owned and operated. We treat every home like it\'s our own.' },
-]
-
-const TESTIMONIALS = [
-  {
-    name: 'Marcus Robinson',
-    when: '5 months ago',
-    text: '"Great work. Pedro and his crew were exceptional. Work was done expeditiously with quality and care. Very transparent and honest throughout the whole process."',
-  },
-  {
-    name: 'Donnie Brown',
-    when: '6 months ago',
-    text: '"The guys at Tough Roofing are fantastic to work with. They showed up at 7am sharp to remove the old roof, and by dinnertime we had a brand new roof! Highly recommend."',
-  },
-  {
-    name: 'Krys M',
-    when: '9 months ago',
-    text: '"Excellent communication from start to finish. The crew was professional, clean, and left the yard spotless. Our new roof looks amazing and the price was very fair."',
-  },
-]
-
-const FAQS = [
-  { q: 'How do I know if my roof needs repair or replacement?', a: 'If your roof is under 15–20 years old and damage is localized, repair is usually best. For older roofs or widespread damage, a full replacement is often more cost-effective. We offer free inspections to help you decide.' },
-  { q: 'What types of roofing materials do you use?', a: 'We work with CertainTeed, Owens Corning, Malarkey, GAF, and IKO — all top-tier, USA-made brands.' },
-  { q: 'Do you offer emergency roofing services?', a: 'Yes! We provide 24/7 emergency response. Call us anytime at (971) 230-4929.' },
-  { q: 'How fast can repairs or replacements be completed?', a: 'Most repairs are completed same-day or next-day. Full roof replacements typically take one to two days.' },
-  { q: 'Are your roofing crews in-house or subcontracted?', a: '100% in-house. We never subcontract work.' },
-  { q: 'Do you use roofing materials made in the USA?', a: 'Yes — we specifically source materials from manufacturers who produce quality products domestically.' },
-]
-
-const BRANDS = ['CertainTeed', 'Owens Corning', 'Malarkey', 'GAF', 'IKO']
 
 function FAQ({ q, a }) {
   const [open, setOpen] = useState(false)
@@ -225,6 +193,10 @@ export default function App() {
       <Route path="/services/:id" element={<ServicePage />} />
       <Route path="/areas" element={<AreasPage />} />
       <Route path="/areas/:id" element={<CityPage />} />
+      <Route path="/why-us" element={<WhyUsPage />} />
+      <Route path="/reviews" element={<ReviewsPage />} />
+      <Route path="/faq" element={<FAQPage />} />
+      <Route path="/financing" element={<FinancingPage />} />
     </Routes>
   )
 }
