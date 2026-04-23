@@ -2,8 +2,10 @@ import { useState } from 'react'
 import { Routes, Route, Link, useNavigate } from 'react-router-dom'
 import { SERVICES } from './services'
 import ServicePage from './ServicePage'
+import ServicesPage from './ServicesPage'
 import AreasPage from './AreasPage'
 import CityPage from './CityPage'
+import Navbar from './Navbar'
 import './App.css'
 
 const WHY = [
@@ -62,21 +64,7 @@ function HomePage() {
 
   return (
     <>
-      {/* NAV */}
-      <nav className="navbar">
-        <div className="nav-logo">Tough<span>Roofing</span></div>
-        <ul className="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><Link to="/areas">Areas We Service</Link></li>
-          <li><a href="#why">Why Us</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="tel:9712304929" className="nav-cta">(971) 230-4929</a></li>
-        </ul>
-        <a href="tel:9712304929" className="btn-primary" style={{ fontSize: 14, padding: '9px 18px' }}>
-          Call Now
-        </a>
-      </nav>
+      <Navbar />
 
       {/* FINANCING BANNER */}
       <div className="financing-bar">
@@ -233,6 +221,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/services" element={<ServicesPage />} />
       <Route path="/services/:id" element={<ServicePage />} />
       <Route path="/areas" element={<AreasPage />} />
       <Route path="/areas/:id" element={<CityPage />} />
