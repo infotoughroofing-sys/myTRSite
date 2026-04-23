@@ -10,6 +10,8 @@
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .nav-logo {
@@ -17,6 +19,7 @@
   font-weight: 800;
   color: var(--red);
   letter-spacing: -0.5px;
+  white-space: nowrap;
 }
 
 .nav-logo span {
@@ -25,17 +28,20 @@
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 4px;
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 .nav-links a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--dark);
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 6px;
   border: 1.5px solid transparent;
+  white-space: nowrap;
   transition: color .2s, border-color .2s, background .2s;
 }
 
@@ -48,16 +54,118 @@
 .nav-cta {
   background: var(--red);
   color: #fff !important;
-  padding: 9px 20px;
+  padding: 7px 14px;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   transition: background .2s;
+  white-space: nowrap;
 }
 
 .nav-cta:hover {
   background: var(--red-dark) !important;
   color: #fff !important;
+}
+
+.nav-call-btn {
+  font-size: 13px;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+/* Hamburger button — hidden on desktop */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+
+.nav-hamburger:hover {
+  border-color: var(--red);
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--dark);
+  border-radius: 2px;
+  transition: background .2s;
+}
+
+.nav-hamburger.is-open span {
+  background: var(--red);
+}
+
+/* Mobile drawer — hidden on desktop */
+.nav-drawer {
+  display: none;
+}
+
+/* ── RESPONSIVE NAV ── */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  .nav-links,
+  .nav-call-btn {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-drawer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid var(--border);
+    margin-top: 12px;
+    padding-top: 12px;
+    gap: 4px;
+  }
+
+  .nav-drawer-link {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark);
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1.5px solid transparent;
+    transition: color .2s, border-color .2s, background .2s;
+  }
+
+  .nav-drawer-link:hover {
+    color: var(--red);
+    border-color: #e8c4c1;
+    background: #fdf5f5;
+  }
+
+  .nav-drawer-cta {
+    margin-top: 8px;
+    background: var(--red);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 7px;
+    text-align: center;
+    transition: background .2s;
+  }
+
+  .nav-drawer-cta:hover {
+    background: var(--red-dark);
+    color: #fff;
+  }
 }
 
 /* ── HERO ── */
@@ -476,10 +584,6 @@
     padding: 12px 20px;
     flex-wrap: wrap;
     gap: 12px;
-  }
-
-  .nav-links {
-    display: none;
   }
 
   .hero {
