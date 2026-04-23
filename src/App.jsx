@@ -122,7 +122,13 @@ function HomePage() {
         </div>
         <div className="brands-row">
           {BRANDS.map(b => (
-            <div className="brand-pill" key={b}>{b}</div>
+            <a
+              className="brand-pill"
+              key={b.name}
+              href={b.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >{b.name}</a>
           ))}
         </div>
       </section>

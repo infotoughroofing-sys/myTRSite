@@ -506,6 +506,16 @@
   font-size: 15px;
   color: var(--dark);
   letter-spacing: 0.3px;
+  text-decoration: none;
+  display: inline-block;
+  transition: border-color .2s, color .2s, box-shadow .2s;
+  cursor: pointer;
+}
+
+.brand-pill:hover {
+  border-color: var(--red);
+  color: var(--red);
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
 }
 
 /* ── CTA SECTION ── */

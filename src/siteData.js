@@ -131,4 +131,10 @@ export const FAQS = [
   },
 ]
 
-export const BRANDS = ['CertainTeed', 'Owens Corning', 'Malarkey', 'GAF', 'IKO']
+export const BRANDS = [
+  { name: 'CertainTeed', url: 'https://www.certainteed.com/find-a-contractor/' },
+  { name: 'Owens Corning', url: 'https://www.owenscorning.com/en-us/roofing/find-a-contractor' },
+  { name: 'Malarkey', url: 'https://www.malarkeyroofing.com/find-a-contractor/' },
+  { name: 'GAF', url: 'https://www.gaf.com/en-us/roofing-contractors' },
+  { name: 'IKO', url: 'https://www.iko.com/na/find-a-contractor/' },
+]
