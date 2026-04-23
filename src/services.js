@@ -55,6 +55,9 @@ export const SERVICES = [
     id: 'gutter-services',
     icon: '🌧️',
     title: 'Gutter Services',
+    photo: 'gutter-damage.jpg',
+    photoAlt: 'Failed gutter pulling away from roofline with water damage visible',
+    photoCaption: 'A failed gutter system — water overflowing and running down the fascia instead of draining away from the home.',
     tagline: 'Installation, replacement, and cleaning of gutters to protect your home from water damage.',
     hero: 'Gutters do the quiet work of directing thousands of gallons of rainwater away from your foundation every year. When they fail, the consequences are costly. We install, replace, and clean gutters to keep your home protected.',
     details: [

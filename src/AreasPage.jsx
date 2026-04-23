@@ -9,6 +9,7 @@ const AREA_ORDER = [
   'West Metro',
   'North & Clark County (WA)',
   'South Metro',
+  'Oregon Coast',
 ]
 
 const AREAS = AREA_ORDER.map(region => ({
@@ -37,9 +38,9 @@ export default function AreasPage() {
 
       {/* HERO */}
       <section className="areas-hero">
-        <div className="hero-badge">Serving Portland &amp; Surrounding Communities</div>
+        <div className="hero-badge">Serving Portland, the Metro &amp; the Oregon Coast</div>
         <h1>Areas We <span>Service</span></h1>
-        <p>From Portland proper to Clark County, WA — our in-house crew brings quality roofing to the entire metro area.</p>
+        <p>From Portland proper to Clark County, WA and down the Oregon Coast — our in-house crew brings quality roofing wherever you need us.</p>
         <a href="tel:9712304929" className="btn-primary" style={{ fontSize: 16, padding: '14px 32px' }}>
           Get a Free Estimate
         </a>

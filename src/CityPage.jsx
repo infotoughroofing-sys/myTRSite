@@ -59,6 +59,20 @@ export default function CityPage() {
         </div>
       </section>
 
+      {/* CITY PHOTO (Oregon Coast and others with photos) */}
+      {city.photo && (
+        <section className="section" style={{ paddingTop: 0 }}>
+          <div className="sp-photo-block" style={{ maxWidth: 900, margin: '0 auto' }}>
+            <img
+              src={`/src/assets/${city.photo}`}
+              alt={`Roofing in ${city.name}, Oregon`}
+              className="sp-photo"
+            />
+            <p className="sp-photo-caption">A recent commercial roofing project completed by Tough Roofing — the same quality we bring to every job in {city.name}.</p>
+          </div>
+        </section>
+      )}
+
       {/* NEIGHBORHOOD SPOTLIGHT */}
       <section className="section section-alt">
         <div className="city-neighborhood">

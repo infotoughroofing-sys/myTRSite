@@ -70,6 +70,22 @@ export default function ServicePage() {
         </div>
       </section>
 
+      {/* PHOTO (if available) */}
+      {service.photo && (
+        <section className="sp-section">
+          <div className="sp-photo-block">
+            <img
+              src={`/src/assets/${service.photo}`}
+              alt={service.photoAlt || service.title}
+              className="sp-photo"
+            />
+            {service.photoCaption && (
+              <p className="sp-photo-caption">{service.photoCaption}</p>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* DETAILS */}
       <section className="sp-section sp-section-alt">
         <div className="sp-details-grid">
