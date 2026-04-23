@@ -2,7 +2,7 @@ export const SERVICES = [
   {
     id: 'roof-replacement',
     icon: '🏠',
-    title: 'Roof Replacement',
+    title: 'Residential Roof Replacement',
     photo: 'commercial-apartment-roof.jpg',
     photoAlt: 'Close-up aerial view of new architectural shingles installed by Tough Roofing',
     photoCaption: 'Fresh architectural shingles installed by our in-house crew — clean lines, proper ventilation, and built to last.',
@@ -138,7 +138,7 @@ export const SERVICES = [
   {
     id: 'commercial-roofing',
     icon: '🏢',
-    title: 'Commercial Roofing',
+    title: 'Commercial Roof Replacement',
     photo: 'commercial-apartment-roof-1.jpg',
     photoAlt: 'Completed apartment complex roof replacement by Tough Roofing in Portland',
     photoCaption: 'A completed apartment complex roof replacement — architectural shingles, proper ventilation, and clean execution by our in-house crew.',
