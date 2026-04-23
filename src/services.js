@@ -35,26 +35,32 @@ export const SERVICES = [
     photo: 'commercial-apartment-roof-1.jpg',
     photoAlt: 'Completed apartment complex roof replacement by Tough Roofing in Portland',
     photoCaption: 'A completed apartment complex roof replacement — architectural shingles, proper ventilation, and clean execution by our in-house crew.',
-    tagline: 'Durable flat and low-slope roofing solutions for businesses of all sizes.',
-    hero: 'Commercial roofs have unique demands — large surface areas, foot traffic, HVAC penetrations, and strict drainage requirements. We bring the same in-house quality and accountability to every commercial project.',
+    tagline: 'Portland\'s trusted flat roof contractor for warehouses, apartment complexes, property managers, and commercial facilities.',
+    hero: 'Commercial flat roofs demand a different level of expertise — and Tough Roofing delivers it. We specialize in flat roof replacement and installation for warehouses, apartment complexes, multi-family housing, property management portfolios, and commercial facilities across the Portland metro area. Whether you manage a single building or a dozen properties, our in-house crew handles every project with the same accountability, quality materials, and zero subcontracting.',
     details: [
       {
-        heading: 'Systems We Install',
-        body: 'TPO (Thermoplastic Polyolefin), EPDM rubber roofing, modified bitumen, built-up roofing (BUR), metal roofing for commercial applications.',
+        heading: 'Who We Work With',
+        body: 'We serve warehouse owners, property management companies, apartment complex operators, HOAs, retail centers, office buildings, and water detection and restoration companies that need reliable flat roofing on their service facilities. If you manage multiple properties, ask about our portfolio pricing and maintenance programs.',
       },
       {
-        heading: 'Maintenance Programs',
-        body: 'We offer scheduled inspection and maintenance programs for commercial clients to catch problems early and extend roof life — saving significant money compared to reactive repairs.',
+        heading: 'Flat Roof Systems We Install',
+        body: 'TPO (Thermoplastic Polyolefin) — the industry standard for energy-efficient flat roofing. EPDM rubber roofing — proven, flexible, and long-lasting. Modified bitumen — ideal for high-traffic rooftops. Built-up roofing (BUR) — multiple layers for maximum protection. We assess your building\'s drainage, foot traffic, and HVAC load before recommending the right system.',
       },
       {
-        heading: 'Minimal Disruption',
-        body: 'We work around your business hours when possible and plan projects to minimize disruption to your operations, employees, and customers.',
+        heading: 'Maintenance & Inspection Programs',
+        body: 'Flat roofs require regular inspection to catch ponding water, membrane separation, and flashing failures early. We offer scheduled maintenance programs for property managers and commercial clients — keeping your roofs in compliance, extending their lifespan, and preventing costly emergency repairs.',
+      },
+      {
+        heading: 'Minimal Disruption to Your Operations',
+        body: 'We schedule around your tenants, employees, and business hours. For large commercial projects, we use phased installation to keep your building operational throughout. Every job is documented with before-and-after photos and a written warranty.',
       },
     ],
     faqs: [
-      { q: 'Do you handle large commercial buildings?', a: 'Yes — we work on everything from small retail shops to large warehouse and office buildings across the Portland metro area.' },
-      { q: 'What is TPO roofing?', a: 'TPO is a single-ply membrane that\'s energy-efficient, highly reflective, and one of the most popular flat roofing systems available today.' },
-      { q: 'Can you work on a building that\'s still in operation?', a: 'Absolutely. We plan around your schedule and use phased approaches when needed to keep your business running.' },
+      { q: 'Do you work with property management companies?', a: 'Yes — we work with property managers across the Portland metro area and offer volume pricing for multi-property portfolios. We can coordinate inspections, estimates, and scheduling across all your buildings.' },
+      { q: 'Can you replace a flat roof on a warehouse or large commercial building?', a: 'Absolutely. We handle flat roof replacements on warehouses, distribution centers, retail strips, office complexes, and apartment buildings of all sizes.' },
+      { q: 'What flat roof system do you recommend?', a: 'TPO is the most popular choice today — it\'s energy-efficient, highly reflective, and durable in the Pacific Northwest climate. We\'ll evaluate your specific building before making a recommendation.' },
+      { q: 'Do you service roofs for water detection or restoration companies?', a: 'Yes — we understand the urgency that water damage contractors operate under and can prioritize facility roof repairs to keep your team moving.' },
+      { q: 'Can you work on a building that\'s still in operation?', a: 'Absolutely. We plan around your schedule and use phased approaches when needed to keep your business running with minimal disruption to tenants or staff.' },
     ],
   },
   {
