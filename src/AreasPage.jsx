@@ -79,21 +79,8 @@ export default function AreasPage() {
         </a>
       </section>
 
-      {/* HIGHLIGHTS */}
-      <section className="section">
-        <div className="areas-highlights">
-          {HIGHLIGHTS.map(h => (
-            <div className="areas-highlight-card" key={h.label}>
-              <span className="areas-highlight-icon">{h.icon}</span>
-              <strong>{h.label}</strong>
-              <p>{h.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* AREA GRID */}
-      <section className="section section-alt">
+      <section className="section">
         <div className="section-title">
           <h2><span className="red-underline">Cities We Serve</span></h2>
           <p>Don't see your city? Give us a call — we may still be able to help.</p>
@@ -109,6 +96,19 @@ export default function AreasPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* HIGHLIGHTS */}
+      <section className="section section-alt">
+        <div className="areas-highlights">
+          {HIGHLIGHTS.map(h => (
+            <div className="areas-highlight-card" key={h.label}>
+              <span className="areas-highlight-icon">{h.icon}</span>
+              <strong>{h.label}</strong>
+              <p>{h.desc}</p>
             </div>
           ))}
         </div>
