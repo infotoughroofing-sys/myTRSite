@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Routes, Route, Link, useNavigate } from 'react-router-dom'
 import { SERVICES } from './services'
 import ServicePage from './ServicePage'
+import AreasPage from './AreasPage'
 import './App.css'
 
 const WHY = [
@@ -65,6 +66,7 @@ function HomePage() {
         <div className="nav-logo">Tough<span>Roofing</span></div>
         <ul className="nav-links">
           <li><a href="#services">Services</a></li>
+          <li><Link to="/areas">Areas We Service</Link></li>
           <li><a href="#why">Why Us</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -231,6 +233,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services/:id" element={<ServicePage />} />
+      <Route path="/areas" element={<AreasPage />} />
     </Routes>
   )
 }

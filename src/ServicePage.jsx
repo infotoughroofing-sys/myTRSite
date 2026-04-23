@@ -31,6 +31,7 @@ export default function ServicePage() {
         <Link to="/" className="nav-logo">Tough<span>Roofing</span></Link>
         <ul className="nav-links">
           <li><Link to="/#services">Services</Link></li>
+          <li><Link to="/areas">Areas We Service</Link></li>
           <li><Link to="/#why">Why Us</Link></li>
           <li><Link to="/#reviews">Reviews</Link></li>
           <li><Link to="/#faq">FAQ</Link></li>
