@@ -98,8 +98,34 @@ export default function ServicePage() {
         </div>
       </section>
 
+      {/* PROS / CONS */}
+      {service.prosCons && (
+        <section className="sp-section">
+          <h2 className="sp-section-heading">Material Comparison</h2>
+          <div className="sp-proscons-grid">
+            {service.prosCons.map(item => (
+              <div className="sp-proscons-card" key={item.material}>
+                <h3 className="sp-proscons-title">{item.material}</h3>
+                <div className="sp-proscons-col">
+                  <p className="sp-proscons-label sp-pros-label">Pros</p>
+                  <ul className="sp-proscons-list">
+                    {item.pros.map(p => <li key={p}><span className="sp-pro-icon">✓</span>{p}</li>)}
+                  </ul>
+                </div>
+                <div className="sp-proscons-col">
+                  <p className="sp-proscons-label sp-cons-label">Cons</p>
+                  <ul className="sp-proscons-list">
+                    {item.cons.map(c => <li key={c}><span className="sp-con-icon">✕</span>{c}</li>)}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
-      <section className="sp-section">
+      <section className="sp-section sp-section-alt">
         <h2 className="sp-section-heading">Common Questions</h2>
         <div className="sp-faq-list">
           {service.faqs.map(f => <FAQ key={f.q} q={f.q} a={f.a} />)}
@@ -107,7 +133,7 @@ export default function ServicePage() {
       </section>
 
       {/* OTHER SERVICES */}
-      <section className="sp-section sp-section-alt">
+      <section className="sp-section">
         <h2 className="sp-section-heading">Other Services</h2>
         <div className="sp-others-grid">
           {others.map(s => (

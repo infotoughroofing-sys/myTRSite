@@ -55,6 +55,42 @@ export const SERVICES = [
         body: 'We schedule around your tenants, employees, and business hours. For large commercial projects, we use phased installation to keep your building operational throughout. Every job is documented with before-and-after photos and a written warranty.',
       },
     ],
+    prosCons: [
+      {
+        material: 'TPO Roofing',
+        pros: [
+          'Highly energy-efficient — white membrane reflects UV rays and reduces cooling costs',
+          'Lightweight and flexible, ideal for large flat roof surfaces',
+          'Heat-welded seams create a watertight bond stronger than adhesive systems',
+          'Resistant to punctures, tears, and chemical exposure',
+          'One of the most cost-effective flat roofing options available',
+          'Environmentally friendly — recyclable at end of life',
+        ],
+        cons: [
+          'Thinner membranes can be less durable than PVC under heavy foot traffic',
+          'Quality varies by manufacturer — installation expertise matters significantly',
+          'Can become brittle in extreme cold if low-grade material is used',
+          'Less chemical resistance than PVC in environments with oils or grease exposure',
+        ],
+      },
+      {
+        material: 'PVC Roofing',
+        pros: [
+          'Excellent chemical and grease resistance — ideal for restaurants, food processing, and industrial facilities',
+          'Superior puncture and tear resistance compared to TPO',
+          'Long lifespan — PVC membranes regularly last 20–30 years with proper maintenance',
+          'Heat-welded seams like TPO, creating a fully watertight surface',
+          'Highly fire-resistant and self-extinguishing',
+          'Performs well in extreme temperature swings common in the Pacific Northwest',
+        ],
+        cons: [
+          'Higher upfront cost than TPO — typically 15–25% more per square foot',
+          'Contains plasticizers that can leach out over time, making older membranes brittle',
+          'Less environmentally friendly — PVC is not easily recyclable',
+          'Heavier than TPO, which can affect structural load calculations on older buildings',
+        ],
+      },
+    ],
     faqs: [
       { q: 'Do you work with property management companies?', a: 'Yes — we work with property managers across the Portland metro area and offer volume pricing for multi-property portfolios. We can coordinate inspections, estimates, and scheduling across all your buildings.' },
       { q: 'Can you replace a flat roof on a warehouse or large commercial building?', a: 'Absolutely. We handle flat roof replacements on warehouses, distribution centers, retail strips, office complexes, and apartment buildings of all sizes.' },
