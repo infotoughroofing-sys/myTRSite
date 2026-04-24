@@ -3,9 +3,9 @@ export const SERVICES = [
     id: 'roof-replacement',
     icon: '🏠',
     title: 'Residential Roof Replacement',
-    photo: 'commercial-apartment-roof.jpg',
-    photoAlt: 'Close-up aerial view of new architectural shingles installed by Tough Roofing',
-    photoCaption: 'Fresh architectural shingles installed by our in-house crew — clean lines, proper ventilation, and built to last.',
+    photo: 'CertainTeedMorieBlackClimateflex.jpg',
+    photoAlt: 'CertainTeed Morie Black Climateflex architectural shingles installed by Tough Roofing',
+    photoCaption: 'CertainTeed Morie Black Climateflex architectural shingles — premium performance and curb appeal, installed by our in-house crew.',
     tagline: 'Full residential and commercial roof replacements using premium materials from top manufacturers.',
     hero: 'A new roof is one of the most important investments you can make in your home. Our in-house crew handles everything — tear-off, disposal, underlayment, flashing, and installation — with zero subcontracting.',
     details: [
